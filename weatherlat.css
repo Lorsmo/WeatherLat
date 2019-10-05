@@ -1,0 +1,128 @@
+/* WeatherLat css file */
+
+nav{background-color: white;}
+
+.navbar-brand{border-radius: 10px;}
+
+.nav-link {padding: .6rem 1rem;}
+
+@media (max-width: 768px) {
+    nav{
+      background-color: #17a2b8;
+    }
+    .navbar-toggler{
+        background-color: white;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        color: white;
+    }
+    }
+
+.navbar-nav a:hover{
+    background-color: #17a2b8;
+    border-radius: 10px;
+}
+
+body{background: rgb(224, 221, 221);}
+
+.container{
+    background:transparent;
+    padding:10px;
+    margin-top: 5px;
+}
+
+hr{border-top: 2px solid;}
+
+i {margin-right: 4px;}
+
+p{text-align:justify;}
+
+.box{
+    padding: 0.9rem;
+    border-radius: 20px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.target{
+    border: 3px solid #17a2b8;
+    border-radius: 10px;
+}
+
+table tr:nth-child(even) {
+    background: rgb(178, 221, 226);
+}
+
+.table tr:hover {
+    background: #17a2b8;
+    cursor: auto;
+}
+
+
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: rgb(23, 9, 207);
+    border-radius: 50%;
+    display: inline-block;
+}
+.dash {
+    height: 10px;
+    width: 10px;
+    color: rgb(148, 44, 18);
+}
+figure{
+    border-radius: 5%;
+    border: 3px solid #17a2b8;
+    overflow: hidden;
+}
+
+figure:hover{
+    border:4px blue solid;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+/* Code for Earth: original code at https://codepen.io/zFunx/pen/dZaGJG*/
+.earth {
+    width: 300px;
+    height: 300px;
+    position: static;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: 20px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 20px #000 inset, 0 0 20px 2px #000;
+  }
+  
+  .earth:after {
+    position: static;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: -20px -20px 50px 2px #000 inset;
+    border-radius: 50%;
+  }
+  
+  .earth > div {
+    width: 200%;
+    height: 100%;
+    animation: spin 30s linear alternate infinite;
+    background: url(Resources/assets/images/mapearth.png);
+    
+    background-size: cover;
+  }
+  @keyframes spin {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+/* ---------------------------------------------------- */

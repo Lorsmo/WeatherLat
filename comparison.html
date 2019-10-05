@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Comparison</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    ​<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+     
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    ​
+    <link rel="stylesheet" type="text/css" href="weatherlat.css">       
+     
+</head>
+
+<body>
+   
+    <nav class="navbar p-0 mb-1 navbar-expand-md sticky-top navbar-light" role="navigation">
+            
+        <a class="navbar-brand p-2 mt-0 ml-5 bg-info text-white" href="home.html"><i class="fas fa-home fa-fw"></i> WeatherLat</a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="collapsingNavbar"> 
+            <ul class="navbar-nav mr-5 ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-chart-area fa-fw"></i> Visualizations
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="temperature.html"><i class="fas fa-thermometer-full fa-fw"></i> Max Temperature</a>
+                        <a class="dropdown-item" href="humidity.html"><i class="fas fa-tint fa-fw"></i> Humidity</a>
+                        <a class="dropdown-item" href="cloud.html"><i class="fab fa-cloudversify fa-fw"></i> Cloudiness</a>
+                        <a class="dropdown-item" href="wind.html"><i class="fas fa-wind fa-fw"></i> Wind Speed</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link text-primary" href="comparison.html"><i class="fas fa-greater-than-equal fa-fw"></i>    Comparison</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link text-black" href="map.html"><i class="fas fa-map-marked-alt fa-fw"></i>    Map</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="data.html"><i class="fas fa-table fa-fw"></i>  Data</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container w-75">
+        <div class="box border bg-light border-info">
+            <div class="h1 p-3 mb-4 bg-info text-white text-center rounded-lg">Comparison: Latitude vs X</div>
+            <div class="row">
+                <div class="col-md-6">
+                    <figure>
+                        <a href="temperature.html">
+                            <div class="h5 p-2 text-center bg-info text-white" >vs. Max Temperature</div>
+                            <img class="img-fluid" src="Resources/assets/images/temperaturemap.png" alt="Temperature Map">
+                        </a>
+                    </figure>
+                 </div>
+            
+                <div class="col-md-6">
+                    <figure>
+                        <a href="cloud.html">          
+                            <div class="h5 p-2 text-center bg-info text-white" >vs. Cloudiness</div>
+                            <img class="img-fluid" src="Resources/assets/images/cloudymap.png" alt="Cloudy Map">
+                        </a>
+                    </figure>
+                </div>
+            </div>             
+        
+            <div class="row">
+                <div class="col-md-6">
+                    <figure class="left">
+                        <a href="humidity.html">
+                            <div class="h5 p-2 text-center bg-info text-white" >vs. Humidity</div>
+                            <img class="img-fluid" src="Resources/assets/images/humiditymap.png" alt="Humidity Map">
+                        </a>
+                    </figure>
+                 </div>
+            
+                <div class="col-md-6">
+                    <figure>
+                        <a href="wind.html">
+                            <div class="h5 p-2 text-center bg-info text-white" >vs. Wind Speed</div>
+                            <img class="img-fluid" src="Resources/assets/images/windmap.png" alt="Wind Map">
+                        </a>
+                    </figure>
+                </div>
+             </div>
+        </div>
+    </div>
+</body>
+</html>
