@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    ​<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    ​
+    <link rel="stylesheet" type="text/css" href="weatherlat.css">   
+</head>
+
+<body>
+    <nav class="navbar p-0 mb-1 navbar-expand-md sticky-top navbar-light" role="navigation">  
+        <a class="navbar-brand p-2 mt-0 ml-5 bg-info text-white" href="home.html"><i class="fas fa-home fa-fw"></i> WeatherLat</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="collapsingNavbar"> 
+            <ul class="navbar-nav mr-5 ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-chart-area fa-fw"></i> Visualizations
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="temperature.html"><i class="fas fa-thermometer-full fa-fw"></i> Max Temperature</a>
+                        <a class="dropdown-item" href="humidity.html"><i class="fas fa-tint fa-fw"></i> Humidity</a>
+                        <a class="dropdown-item" href="cloud.html"><i class="fab fa-cloudversify fa-fw"></i> Cloudiness</a>
+                        <a class="dropdown-item" href="wind.html"><i class="fas fa-wind fa-fw"></i> Wind Speed</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="comparison.html"><i class="fas fa-greater-than-equal fa-fw"></i> Comparison</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="map.html"><i class="fas fa-map-marked-alt fa-fw"></i> Map</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="data.html"><i class="fas fa-table fa-fw"></i> Data</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row"> 
+            <div class="col-lg-8">
+                <div class="box bg-white mt-1">
+                    <div class="h1 text-info">Summary: Latitude vs. X</div>
+                    <div class="bg-info"><hr></hr></div>
+                    <div id="carouselExampleSlidesOnly" class="carousel slide float-left w-50" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="Resources/assets/images/temperaturemap.png" class="d-block w-100" alt="Temperature Map">
+                            </div>
+                                <div class="carousel-item">
+                                <img src="Resources/assets/images/cloudymap.png" class="d-block w-100" alt="Cloudy Map">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Resources/assets/images/humiditymap.png" class="d-block w-100" alt="Humidity Map">
+                            </div>
+                                <div class="carousel-item">
+                                <img src="Resources/assets/images/windmap.png" class="d-block w-100" alt="Wind Map">
+                            </div>
+                        </div>
+                            
+                    </div>
+                    
+                    <p>In the WeatherLat project, the objective is to answer this question: <strong>"What's the weather like as we approach the equator?"</strong></p>
+                    <p>The Citypy Python library was used to randomly select 500+ cities across the world of varying distance from the equator. The OpenWeather API collected weather data for these cities.</p> 
+                    <p>Series of scatter  were build using the Matplotlib or Pandas plotting libraries to showcase relationships.</p>
+                        
+                    <!--original code at https://codepen.io/zFunx/pen/dZaGJG-->
+                    <a href="map.html">
+                    <div class="earth float-right">
+                    <!-------------------------------------------------------->
+                            <div></div>
+                            </div></a>
+                            <p>The weather data collected on <strong> October 1st, 2019</strong> comes from 556 cities and include factors we looked at:
+                            <strong><ul>
+                                <li>Maximum Temperature</li>
+                                <li>Humidity</li>
+                                <li>Cloudiness</li>
+                                <li>Wind Speed</li>
+                            </ul></strong></p>
+                    <p>The <a href="data.html">dataset</a> includes also the <strong>coordinates (latitude and longitude)</strong>, the country of the city and the date and time of the weather data collection.</p>
+                    <p>The visualizations created are provided in the site, as well as explanations of trends observed. <br> You will also find a map showing the cities in the dataset.</p>                   
+                </div>          
+            </div>
+            <div class="col-lg-4 ">
+                <div class="box bg-white p-0 pb-2">
+                    <div class="h4 mb-2 text-white bg-info p-2 text-center">Visualizations</div>
+                    <div class="pl-4">
+                        <a href="temperature.html">
+                            <img src="Resources/assets/images/temperaturemap.png" width=45% alt="Temperature Map">
+                        </a>
+                        <a href="cloud.html">
+                            <img class="img-fluid" src="Resources/assets/images/cloudymap.png" width=45% alt="Cloud Map">
+                        </a>
+                        <a href="humidity.html">
+                            <img class="float-left img-fluid" src="Resources/assets/images/humiditymap.png" width=45% alt="Humidity Map">
+                        </a>
+                        <a href="wind.html">
+                            <img class="img-fluid" src="Resources/assets/images/windmap.png" width=45% alt="Wind Map">
+                        </a>
+                    </div>         
+                </div>
+                <div class="box bg-info p-0">
+                    <div class="h5 pb-2 pt-1 bg-info text-center text-white">Latitude? Longitude?</div>
+                    <div class="h6 text-center pl-1">What's the geographic coordinate system?</div>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2PllX2YOAHo" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+</body>
+</html>
