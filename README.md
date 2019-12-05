@@ -6,6 +6,21 @@ Website: https://lorsmo.github.io/weatherlat
   <img src="Screenshot/Main.png">
 </p>
 
+In the WeatherLat project, the objective is to answer this question: "What's the weather like as we approach the equator?"
+
+The Citypy Python library was used to randomly select 500+ cities across the world of varying distance from the equator. The OpenWeather API collected weather data for these cities.
+
+Series of scatter were build using the Matplotlib or Pandas plotting libraries to showcase relationships.
+
+The weather data collected on October 1st, 2019 comes from 556 cities and include factors we looked at:
+- Maximum Temperature
+- Humidity
+- Cloudiness
+- Wind Speed
+The dataset includes also the coordinates (latitude and longitude), the country of the city and the date and time of the weather data collection.
+
+The visualizations created are provided in the website, as well as explanations of trends observed.
+You will also find a map showing the cities in the dataset.
 
 # Pandas
 
